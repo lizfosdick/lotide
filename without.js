@@ -1,4 +1,7 @@
 const eqArrays = function(actualArray, expectedArray) {
+  if (actualArray.length !== expectedArray.length) {
+    return false;
+  }
   for (let i = 0; i < actualArray.length; i++) {
     if (actualArray[i] !== expectedArray[i]) {
       return false;
@@ -15,6 +18,7 @@ const assertArraysEqual = function(actualArray, expectedArray) {
   return console.log(`🛑🛑🛑 Assertion Failed: ${(actualArray)} !== ${(expectedArray)}`);
 };
 
+
 const without = function(source, itemsToRemove) {
   let removingArray = [];
   for (let i = 0; i < source.length; i++) {
@@ -30,6 +34,8 @@ const without = function(source, itemsToRemove) {
   }
   return console.log(removingArray);
 };
+
+
 
 
 without([1, 2, 3], [1]) // => [2, 3]

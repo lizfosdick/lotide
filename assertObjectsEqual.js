@@ -1,6 +1,9 @@
-const eqArrays = function(array1, array2) {
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
+const eqArrays = function(actualArray, expectedArray) {
+  if (actualArray.length !== expectedArray.length) {
+    return false;
+  }
+  for (let i = 0; i < actualArray.length; i++) {
+    if (actualArray[i] !== expectedArray[i]) {
       return false;
     }
   }

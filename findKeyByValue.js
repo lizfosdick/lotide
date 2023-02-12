@@ -3,11 +3,11 @@ const assertEqual = function(actual, expected) {
   if (actual !== expected) return console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
 };
 
-const findKeyByValue = function(genres, show) {
-  let genreArray = (Object.keys(genres));
-  for (let genre of genreArray) {
-    if (genres[genre] === show ) {
-      return genre;
+const findKeyByValue = function(objKeys, value) {
+  let keyArray = (Object.keys(objKeys));
+  for (let key of keyArray) {
+    if (objKeys[key] === value ) {
+      return key;
     }
   }
 }

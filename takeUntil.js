@@ -1,4 +1,7 @@
 const eqArrays = function(actualArray, expectedArray) {
+  if (actualArray.length !== expectedArray.length) {
+    return false;
+  }
   for (let i = 0; i < actualArray.length; i++) {
     if (actualArray[i] !== expectedArray[i]) {
       return false;
@@ -18,7 +21,7 @@ const assertArraysEqual = function(actualArray, expectedArray) {
 
 const takeUntil = function(array, callback) {
   const results = [];
-  for (let item of array) {
+  for (const item of array) {
     if (callback(item) === true) {
       break;
     }
