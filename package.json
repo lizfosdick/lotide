@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@lizf/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Library created as part of Lighthouse Labs Web Development Bootcamp",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/lizfosdick/lotide.git"
   },
-  "author": "",
+  "author": "Liz Fosdick",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lizfosdick/lotide/issues"
